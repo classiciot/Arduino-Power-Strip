@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ArduinoShield)(type KiCad)(uri /home/pradyuth/Documents/ArduinoPowerStrip/ArduinoShield.pretty)(options "")(descr ""))
+)

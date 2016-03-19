@@ -1,0 +1,396 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ArduinoShield
+LIBS:ArduinoPowerStrip-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_SHIELD SHIELD101
+U 1 1 56CFCA29
+P 1850 1700
+F 0 "SHIELD101" H 1500 2650 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 1900 750 60  0000 C CNN
+F 2 "ArduinoShield:ArduinoShield" H 1850 1700 60  0001 C CNN
+F 3 "" H 1850 1700 60  0000 C CNN
+	1    1850 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 900  2000
+NoConn ~ 900  2100
+NoConn ~ 900  2200
+NoConn ~ 900  2300
+NoConn ~ 900  2400
+NoConn ~ 900  2500
+NoConn ~ 900  1800
+NoConn ~ 900  1700
+NoConn ~ 900  1400
+NoConn ~ 900  1300
+NoConn ~ 2800 900 
+NoConn ~ 2800 1000
+NoConn ~ 2800 1100
+NoConn ~ 2800 1200
+NoConn ~ 2800 1300
+NoConn ~ 2800 1400
+NoConn ~ 2800 1500
+NoConn ~ 2800 1600
+NoConn ~ 2800 1800
+NoConn ~ 2800 1900
+NoConn ~ 2800 2000
+NoConn ~ 2800 2100
+NoConn ~ 2800 2200
+NoConn ~ 2800 2300
+$Comp
+L TRIAC U103
+U 1 1 56CFCCA2
+P 8050 1400
+F 0 "U103" H 7800 1750 50  0000 C CNN
+F 1 "BTA06-600B" H 7750 1150 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_Reverse_LargePads" H 8050 1400 50  0001 C CNN
+F 3 "" H 8050 1400 50  0000 C CNN
+	1    8050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOC3041M U101
+U 1 1 56CFCD03
+P 7050 1100
+F 0 "U101" H 6850 1300 50  0000 L CNN
+F 1 "MOC3041M" H 7050 1300 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm_LongPads" H 6850 900 50  0000 L CIN
+F 3 "" H 7015 1100 50  0000 L CNN
+	1    7050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R105
+U 1 1 56CFD4FF
+P 7600 1000
+F 0 "R105" H 7630 1020 50  0000 L CNN
+F 1 "331" H 7630 960 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 7600 1000 50  0001 C CNN
+F 3 "" H 7600 1000 50  0000 C CNN
+	1    7600 1000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Q_NPN_BEC Q101
+U 1 1 56CFD560
+P 5300 1150
+F 0 "Q101" H 5600 1200 50  0000 R CNN
+F 1 "BC847-SOT23" H 5900 1100 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5500 1250 50  0001 C CNN
+F 3 "" H 5300 1150 50  0000 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R101
+U 1 1 56CFD698
+P 4800 1150
+F 0 "R101" H 4830 1170 50  0000 L CNN
+F 1 "331" H 4830 1110 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 4800 1150 50  0001 C CNN
+F 3 "" H 4800 1150 50  0000 C CNN
+	1    4800 1150
+	0    1    1    0   
+$EndComp
+Text Label 700  1500 0    60   ~ 0
+Vcc
+Wire Wire Line
+	700  1500 900  1500
+Text Label 700  1600 0    60   ~ 0
+Gnd
+Wire Wire Line
+	700  1600 900  1600
+Text Label 3050 2400 2    60   ~ 0
+Q2In
+Wire Wire Line
+	3050 2400 2800 2400
+Text Label 3050 2500 2    60   ~ 0
+Q1In
+Wire Wire Line
+	3050 2500 2800 2500
+Text Label 4400 1150 0    60   ~ 0
+Q1In
+Wire Wire Line
+	4400 1150 4700 1150
+Wire Wire Line
+	4900 1150 5100 1150
+Text Label 5400 1550 1    60   ~ 0
+Gnd
+Wire Wire Line
+	5400 1550 5400 1350
+Text Label 5400 650  3    60   ~ 0
+Q1Out
+Wire Wire Line
+	5400 650  5400 950 
+$Comp
+L Q_NPN_BEC Q102
+U 1 1 56CFE8B4
+P 5300 2300
+F 0 "Q102" H 5600 2350 50  0000 R CNN
+F 1 "BC847-SOT23" H 5900 2250 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5500 2400 50  0001 C CNN
+F 3 "" H 5300 2300 50  0000 C CNN
+	1    5300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R102
+U 1 1 56CFE8BB
+P 4800 2300
+F 0 "R102" H 4830 2320 50  0000 L CNN
+F 1 "331" H 4830 2260 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 4800 2300 50  0001 C CNN
+F 3 "" H 4800 2300 50  0000 C CNN
+	1    4800 2300
+	0    1    1    0   
+$EndComp
+Text Label 4400 2300 0    60   ~ 0
+Q2In
+Wire Wire Line
+	4400 2300 4700 2300
+Wire Wire Line
+	4900 2300 5100 2300
+Text Label 5400 2700 1    60   ~ 0
+Gnd
+Wire Wire Line
+	5400 2700 5400 2500
+Text Label 5400 1800 3    60   ~ 0
+Q2Out
+Wire Wire Line
+	5400 1800 5400 2100
+Wire Wire Line
+	7350 1000 7500 1000
+Wire Wire Line
+	7700 1000 8600 1000
+Wire Wire Line
+	7350 1200 7400 1200
+Wire Wire Line
+	7400 1200 7400 1600
+Wire Wire Line
+	7400 1600 7550 1600
+$Comp
+L CONN_01X04 P101
+U 1 1 56CFEFBB
+P 9450 1300
+F 0 "P101" H 9450 1550 50  0000 C CNN
+F 1 "Con1" V 9550 1300 50  0000 C CNN
+F 2 "Connect:bornier4" H 9450 1300 50  0001 C CNN
+F 3 "" H 9450 1300 50  0000 C CNN
+	1    9450 1300
+	1    0    0    -1  
+$EndComp
+Text Label 8850 1150 0    60   ~ 0
+Triac1N
+Wire Wire Line
+	8850 1150 9250 1150
+Text Label 8850 1350 0    60   ~ 0
+Triac1N
+Wire Wire Line
+	8850 1350 9250 1350
+Text Label 8850 1250 0    60   ~ 0
+Triac1L
+Wire Wire Line
+	8850 1250 9250 1250
+Text Label 8850 1450 0    60   ~ 0
+Triac1O
+Wire Wire Line
+	8850 1450 9250 1450
+Text Label 8600 1000 2    60   ~ 0
+Triac1L
+Connection ~ 8050 1000
+Text Label 8600 1650 2    60   ~ 0
+Triac1O
+Wire Wire Line
+	8600 1650 8050 1650
+$Comp
+L R_Small R103
+U 1 1 56CFF5CC
+P 6550 1000
+F 0 "R103" H 6580 1020 50  0000 L CNN
+F 1 "331" H 6580 960 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 6550 1000 50  0001 C CNN
+F 3 "" H 6550 1000 50  0000 C CNN
+	1    6550 1000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6650 1000 6750 1000
+Text Label 6150 1000 0    60   ~ 0
+Gnd
+Text Label 6150 1200 0    60   ~ 0
+Q1Out
+Wire Wire Line
+	6150 1200 6750 1200
+Wire Wire Line
+	6150 1000 6450 1000
+$Comp
+L TRIAC U104
+U 1 1 56D002F3
+P 8050 2750
+F 0 "U104" H 7800 3100 50  0000 C CNN
+F 1 "BTA06-600B" H 7750 2500 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_Reverse_LargePads" H 8050 2750 50  0001 C CNN
+F 3 "" H 8050 2750 50  0000 C CNN
+	1    8050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOC3041M U102
+U 1 1 56D002FA
+P 7050 2450
+F 0 "U102" H 6850 2650 50  0000 L CNN
+F 1 "MOC3041M" H 7050 2650 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm_LongPads" H 6850 2250 50  0000 L CIN
+F 3 "" H 7015 2450 50  0000 L CNN
+	1    7050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R106
+U 1 1 56D00301
+P 7600 2350
+F 0 "R106" H 7630 2370 50  0000 L CNN
+F 1 "331" H 7630 2310 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 7600 2350 50  0001 C CNN
+F 3 "" H 7600 2350 50  0000 C CNN
+	1    7600 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7350 2350 7500 2350
+Wire Wire Line
+	7700 2350 8600 2350
+Wire Wire Line
+	7350 2550 7400 2550
+Wire Wire Line
+	7400 2550 7400 2950
+Wire Wire Line
+	7400 2950 7550 2950
+$Comp
+L CONN_01X04 P102
+U 1 1 56D0030E
+P 9450 2650
+F 0 "P102" H 9450 2900 50  0000 C CNN
+F 1 "Con2" V 9550 2650 50  0000 C CNN
+F 2 "Connect:bornier4" H 9450 2650 50  0001 C CNN
+F 3 "" H 9450 2650 50  0000 C CNN
+	1    9450 2650
+	1    0    0    -1  
+$EndComp
+Text Label 8850 2500 0    60   ~ 0
+Triac2N
+Wire Wire Line
+	8850 2500 9250 2500
+Text Label 8850 2700 0    60   ~ 0
+Triac2N
+Wire Wire Line
+	8850 2700 9250 2700
+Text Label 8850 2600 0    60   ~ 0
+Triac2L
+Wire Wire Line
+	8850 2600 9250 2600
+Text Label 8850 2800 0    60   ~ 0
+Triac2O
+Wire Wire Line
+	8850 2800 9250 2800
+Text Label 8600 2350 2    60   ~ 0
+Triac2L
+Connection ~ 8050 2350
+Text Label 8600 3000 2    60   ~ 0
+Triac2O
+Wire Wire Line
+	8600 3000 8050 3000
+$Comp
+L R_Small R104
+U 1 1 56D00321
+P 6550 2350
+F 0 "R104" H 6580 2370 50  0000 L CNN
+F 1 "331" H 6580 2310 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 6550 2350 50  0001 C CNN
+F 3 "" H 6550 2350 50  0000 C CNN
+	1    6550 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6650 2350 6750 2350
+Text Label 6150 2350 0    60   ~ 0
+Gnd
+Text Label 6150 2550 0    60   ~ 0
+Q2Out
+Wire Wire Line
+	6150 2550 6750 2550
+Wire Wire Line
+	6150 2350 6450 2350
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 56D007F3
+P 3500 1850
+F 0 "#FLG01" H 3500 1945 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 2030 50  0000 C CNN
+F 2 "" H 3500 1850 50  0000 C CNN
+F 3 "" H 3500 1850 50  0000 C CNN
+	1    3500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 56D011CD
+P 4000 1850
+F 0 "#FLG02" H 4000 1945 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 2030 50  0000 C CNN
+F 2 "" H 4000 1850 50  0000 C CNN
+F 3 "" H 4000 1850 50  0000 C CNN
+	1    4000 1850
+	1    0    0    -1  
+$EndComp
+Text Label 3500 2150 1    60   ~ 0
+Vcc
+Wire Wire Line
+	3500 2150 3500 1850
+Text Label 4000 2150 1    60   ~ 0
+Gnd
+Wire Wire Line
+	4000 1850 4000 2150
+$EndSCHEMATC
