@@ -1,4 +1,4 @@
-update=Friday 26 February 2016 09:14:28 AM IST
+update=Sun 20 Mar 2016 23:20:26 IST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../ArduinoPowerStrip
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/pradyuth/Documents/ArduinoPowerStrip/ArduinoShield
+LibName30=ArduinoShield

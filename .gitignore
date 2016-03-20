@@ -11,3 +11,6 @@
 
 # Autorouter files (exported from Pcbnew)
 .dsn
+
+#Cache files
+*-cache.*
